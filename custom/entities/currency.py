@@ -10,9 +10,24 @@ CURRENCY = {
   )
 }
 
+STATION_ABBREVIATIONS = (
+  ('u s d', 'USD'),
+)
+
+def clean_currency(transcript):
+  replacements = [
+    ("euro", "EUR"),
+    # etc
+  ]
+  for key, value in replacements.items():
+    transcript = transcript.replace(key, value)
+  return transcript
+
 CURRENCY_PATTERNS = [[['CURRENCY']]]
 
 ENTITY_DEFINITION = {
   'extraTokens': (CURRENCY,),
   'patterns': CURRENCY_PATTERNS,
-}
+  'collapsiblePatterns': STATION_ABBREVIATIONS,
+  'entityCleaning': clean_currency,
+ }
