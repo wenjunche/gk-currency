@@ -6,6 +6,7 @@ LAST_NAME = {
   'values': (
     'Doerr',
     'Josling',
+    'Jostling',
   )
 }
 
