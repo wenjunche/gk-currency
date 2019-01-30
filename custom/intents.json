@@ -1,0 +1,40 @@
+{
+  "intents": [
+    {
+      "label": "currencies",
+      "domain": "currency_trader",
+      "examples": [
+        "{trader_name} {client} {city} {tenor} {currency} {quantity}"
+      ],
+      "composite_entities": [
+        {
+          "label": "trader_name",
+          "spacing_threshold": 1,
+          "spacing": "",
+          "component_entity_patterns": [
+						["first_name", "last_name"]
+          ]
+        },
+        {
+          "label": "tenor",
+          "spacing_threshold": 1,
+          "spacing": "",
+          "component_entity_patterns": [
+						["value", "month"],
+            ["value", "fraction", "month"]
+          ]
+        },
+        {
+          "label": "quantity",
+          "spacing_threshold": 1,
+          "spacing": "",
+          "component_entity_patterns": [
+						["value", "million"],
+            ["value", "fraction", "million"]
+          ]
+        }
+			],
+      "structure_enforcement": "True"
+    }
+  ]
+}
