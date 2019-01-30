@@ -1,5 +1,5 @@
 import sys
-from nlp.cleanText import clean_fractions
+#from nlp.cleanText import clean_fractions
 
 
 ONE_THROUGH_SEVEN = {
@@ -34,7 +34,8 @@ FRACTION_PATTERNS = [
 
 
 def fraction_cleanup(transcript):
-  return clean_fractions(transcript)
+  #return clean_fractions(transcript)
+  return transcript
 
 
 ENTITY_DEFINITION = {
