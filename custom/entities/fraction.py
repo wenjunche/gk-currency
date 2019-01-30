@@ -1,6 +1,5 @@
 import sys
-sys.path.append('../../nlp')
-from cleanText import clean_fractions
+from nlp.cleanText import clean_fractions
 
 
 ONE_THROUGH_SEVEN = {
