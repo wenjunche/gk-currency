@@ -4,9 +4,9 @@
 CURRENCY = {
   'label': 'CURRENCY',
   'values': (
-    "eur",
-    'jpy',
-    'usd',
+    'USD',
+    "EUR",
+    'JPY',
   )
 }
 
@@ -16,11 +16,11 @@ STATION_ABBREVIATIONS = (
 )
 
 def clean_currency(transcript):
-  replacements = [
-    ("euro", "EUR"),
-    ("japan", "JPY"),
+  replacements = {
+    "euro": "EUR",
+    "japan": "JPY",
     # etc
-  ]
+  }
   for key, value in replacements.items():
     transcript = transcript.replace(key, value)
   return transcript
@@ -31,4 +31,5 @@ ENTITY_DEFINITION = {
   'extraTokens': (CURRENCY,),
   'patterns': CURRENCY_PATTERNS,
   'collapsiblePatterns': STATION_ABBREVIATIONS,
+  'entityCleaning': clean_currency,
  }
