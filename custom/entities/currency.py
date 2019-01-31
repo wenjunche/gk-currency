@@ -13,8 +13,6 @@ CURRENCY = {
 }
 
 STATION_ABBREVIATIONS = (
-  ('euro', 'EUR'),
-  ('japan', 'JPY'),
   ('j p y', 'JPY'),
   ('u s d', 'USD'),
 )
