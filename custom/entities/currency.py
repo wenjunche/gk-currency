@@ -4,9 +4,9 @@
 CURRENCY = {
   'label': 'CURRENCY',
   'values': (
-    'USD',
-    "EUR",
-    'JPY',
+    "eur",
+    'jpy',
+    'usd',
   )
 }
 
