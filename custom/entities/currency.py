@@ -31,5 +31,4 @@ ENTITY_DEFINITION = {
   'extraTokens': (CURRENCY,),
   'patterns': CURRENCY_PATTERNS,
   'collapsiblePatterns': STATION_ABBREVIATIONS,
-  'entityCleaning': clean_currency,
  }
