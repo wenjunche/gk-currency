@@ -4,8 +4,8 @@
 CITY = {
   'label': 'CITY',
   'values': (
-    'London',
-    'New York',
+    'london',
+    'new york',
   )
 }
 
