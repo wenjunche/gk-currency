@@ -31,14 +31,6 @@
 						["value", "million"],
             ["value", "fraction", "million"]
           ]
-        },
-        {
-          "label": "complete_quote",
-          "spacing_threshold": 1,
-          "spacing": "",
-          "component_entity_patterns": [
-						["trader_name", "client", "city", "tenor", "currency", "quantity"]
-          ]
         }
 			],
       "structure_enforcement": "True"
