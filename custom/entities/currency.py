@@ -4,13 +4,17 @@
 CURRENCY = {
   'label': 'CURRENCY',
   'values': (
-    'USD',
+    "euro",
     "EUR",
+    "japan",
     'JPY',
+    'USD',
   )
 }
 
 STATION_ABBREVIATIONS = (
+  ('euro', 'EUR'),
+  ('japan', 'JPY'),
   ('j p y', 'JPY'),
   ('u s d', 'USD'),
 )
