@@ -4,6 +4,8 @@
 LAST_NAME = {
   'label': 'LAST_NAME',
   'values': (
+    'barkell',
+    'boyle',  
     'doerr',
     'josling',
     'jostling',

@@ -4,8 +4,10 @@
 FIRST_NAME = {
   'label': 'FIRST_NAME',
   'values': (
-    'joe',
+    'alexandra',
+    'chuck',
     'mark',
+    'tony,'
   )
 }
 

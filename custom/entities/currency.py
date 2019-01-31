@@ -11,12 +11,14 @@ CURRENCY = {
 }
 
 STATION_ABBREVIATIONS = (
+  ('j p y', 'JPY'),
   ('u s d', 'USD'),
 )
 
 def clean_currency(transcript):
   replacements = [
     ("euro", "EUR"),
+    ("japan", "JPY"),
     # etc
   ]
   for key, value in replacements.items():
