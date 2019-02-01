@@ -4,7 +4,7 @@
       "label": "currencies",
       "domain": "currency_trader",
       "examples": [
-        "{trader_name} {client} {city} {tenor} {currency} {quantity}"
+        "{trader_name} {legal_entity} {city} {tenor} {currency} {quantity}"
       ],
       "composite_entities": [
         {

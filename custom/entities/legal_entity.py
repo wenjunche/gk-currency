@@ -1,12 +1,11 @@
 NON_ABBREVIATED_NAMES = ('jeffries', 'barclays')
 
-CLIENT_NAME = {
-  'label': 'CLIENT_NAME',
+LEGAL_ENTITY_NAME = {
+  'label': 'LEGAL_ENTITY_NAME',
   'values': ('JP', 'RBC', 'BNY') + NON_ABBREVIATED_NAMES
 }
 
-
-CLIENT_ABBREVIATIONS = (
+LEGAL_ENTITY_ABBREVIATIONS = (
   ('j p', 'JP'),
   ('r b c', 'RBC'),
   ('b n y', 'BNY'),
@@ -17,9 +16,9 @@ def capitalize(entity):
 
 ENTITY_DEFINITION = {
   'patterns': [
-     [['CLIENT_NAME']],
+     [['LEGAL_ENTITY_NAME']],
   ],
-  'extraTokens': (CLIENT_NAME,),
+  'extraTokens': (LEGAL_ENTITY_NAME,),
   'entityCleaning': capitalize,
-  'collapsiblePatterns': CLIENT_ABBREVIATIONS,
+  'collapsiblePatterns': LEGAL_ENTITY_ABBREVIATIONS,
 }
